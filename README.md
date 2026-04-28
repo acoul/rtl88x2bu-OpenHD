@@ -165,7 +165,6 @@ Disclaimer: some chips may not lock every frequency. Use at your own risk and co
 ## Manual DKMS installation
 ```
 git clone "https://github.com/OpenHD/rtl88x2bu.git" /usr/src/rtl88x2bu-5.13.1-git
-sed -i 's/PACKAGE_VERSION="@PKGVER@"/PACKAGE_VERSION="5.13.1-git"/g' /usr/src/rtl88x2bu-5.13.1-git/dkms.conf
 dkms add -m rtl88x2bu -v 5.13.1-git
 dkms autoinstall
 ```
